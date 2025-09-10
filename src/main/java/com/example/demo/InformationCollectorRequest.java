@@ -11,6 +11,16 @@ public class InformationCollectorRequest {
     private String environment;
 
 
+    public InformationCollectorRequest(String from, String to, BigDecimal quantity, BigDecimal conversionMultiple, BigDecimal totalCalculatedAmount, String environment) {
+        this.from = from;
+        this.to = to;
+        this.quantity = quantity;
+        this.conversionMultiple = conversionMultiple;
+        this.totalCalculatedAmount = totalCalculatedAmount;
+        this.environment = environment;
+    }
+    
+
     public String getFrom() {
         return this.from;
     }
